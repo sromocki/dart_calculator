@@ -1,0 +1,34 @@
+<div id="calculator_container">
+    <div id="calculator_screen">{{screenText}}</div>
+    <div class="line"></div>
+
+    <div class="button-row">
+        <div id="title">Dart Calculator</div>
+        <div id="clear" class="button red" (click)="clearScreen($event)">C</div>
+        <div id="clear-everything" class="button red" (click)="clearEverything($event)">CE</div>
+    </div>
+    <div class="button-row">
+        <div class="button number" (click)="numberClicked($event)">1</div>
+        <div class="button number" (click)="numberClicked($event)">2</div>
+        <div class="button number" (click)="numberClicked($event)">3</div>
+        <div id="divide" class="button operation" (click)="divideClicked($event)">/</div>
+    </div>
+    <div class="button-row">
+        <div class="button number" (click)="numberClicked($event)">4</div>
+        <div class="button number" (click)="numberClicked($event)">5</div>
+        <div class="button number" (click)="numberClicked($event)">6</div>
+        <div id="multiply" class="button operation" (click)="multiplyClicked($event)">*</div>
+    </div>
+    <div class="button-row">
+        <div class="button number" (click)="numberClicked($event)">7</div>
+        <div class="button number" (click)="numberClicked($event)">8</div>
+        <div class="button number" (click)="numberClicked($event)">9</div>
+        <div id="subtract" class="button operation" (click)="subtractClicked($event)">-</div>
+    </div>
+    <div class="button-row">
+        <div class="button number">0</div>
+        <div id="decimal" class="button" (click)="decimalClicked($event)">.</div>
+        <div id="equals" class="button" (click)="equalsClicked($event)">=</div>
+        <div id="add" class="button operation" (click)="addClicked($event)">+</div>
+    </div>
+</div>
